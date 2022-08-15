@@ -8,7 +8,7 @@ html(lang='en')
         meta(name='description' content='')
         meta(name='author' content='')
 
-        title Stylish Portfolio - Start Bootstrap Template
+        title Ishtiaque's World
 
         // Favicon
         link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
@@ -33,146 +33,120 @@ html(lang='en')
         nav#sidebar-wrapper
             ul.sidebar-nav
                 li.sidebar-brand
-                    a(href='#page-top') Start Bootstrap
+                    a(href='#page-top') Ishtiaque
                 li.sidebar-nav-item
                     a(href='#page-top') Home
                 li.sidebar-nav-item
                     a(href='#about') About
                 li.sidebar-nav-item
-                    a(href='#services') Services
+                    a(href='#blog') Blog
                 li.sidebar-nav-item
-                    a(href='#portfolio') Portfolio
+                    a(href='#work') Work Exp.
                 li.sidebar-nav-item
-                    a(href='#contact') Contact
+                    a(href='#connect') Connect
 
         // Header
         header.masthead.d-flex.align-items-center
-            .container.px-4.px-lg-5.text-center
-                h1.mb-1 Stylish Portfolio
-                h3.mb-5
-                    em A Free Bootstrap Theme by Start Bootstrap
+            .container.px-4.px-lg-5.text-start
+                h4.mb-5.text-uppercase Ishtiaque Zafar
+                h1.mb-5 { converting ideas into products }
                 a.btn.btn-primary.btn-xl(href='#about') Find Out More
 
         // About
-        section#about.content-section.bg-light
-            .container.px-4.px-lg-5.text-center
+        section#about.content-section.bg-dark
+            .container.px-4.px-lg-5.text-start.text-light
                 .row.gx-4.gx-lg-5.justify-content-center
-                    .col-lg-10
-                        h2 Stylish Portfolio is the perfect theme for your next project!
-                        p.lead.mb-5
-                            | This theme features a flexible, UX friendly sidebar menu and stock photos from our friends at
-                            a(href='https://unsplash.com/') Unsplash
-                            | !
-                        a.btn.btn-dark.btn-xl(href='#services') What We Offer
+                    .col
+                        h6.mb-5.text-uppercase About Me
+                        h1.mb-1 Software Engineer
+                        h1.mb-1 Blogger
+                        h1.mb-5 Dreamer, doer, go-getter
+                        p.text-justify
+                            | I enable businesses. I transform ideas into products using my coding superpowers.
+                            | I am capable of building highly scalable solutions powered by the cloud!
+                            | I am pro-serverless and pro-automation. If there's something that can be automated,
+                            | I'll do it! I have worked at several startups from early stage phases and lead them to new heights.
+                            | I am not your average "developer", I am extremely passionate about my work and love what I do.
+                            | I also try be a part of the local developer community. I conduct training sessions,
+                            | attend meetups and conferences and have spoken at a few myself.
+                    .col
+                        div.image-holder
+                            div.about-image
 
-        // Services
-        section#services.content-section.bg-primary.text-white.text-center
+        // Blog
+        section#blog.content-section
             .container.px-4.px-lg-5
-                .content-section-heading
-                    h3.text-secondary.mb-0 Services
-                    h2.mb-5 What We Offer
-                .row.gx-4.gx-lg-5
-                    .col-lg-3.col-md-6.mb-5.mb-lg-0
-                        span.service-icon.rounded-circle.mx-auto.mb-3
-                            i.icon-screen-smartphone
-                        h4
-                            strong Responsive
-                        p.text-faded.mb-0 Looks great on any screen size!
-                    .col-lg-3.col-md-6.mb-5.mb-lg-0
-                        span.service-icon.rounded-circle.mx-auto.mb-3
-                            i.icon-pencil
-                        h4
-                            strong Redesigned
-                        p.text-faded.mb-0 Freshly redesigned for Bootstrap 5.
-                    .col-lg-3.col-md-6.mb-5.mb-md-0
-                        span.service-icon.rounded-circle.mx-auto.mb-3
-                            i.icon-like
-                        h4
-                            strong Favorited
-                        p.text-faded.mb-0
-                            | Millions of users
-                            i.fas.fa-heart
-                            | Start Bootstrap!
-                    .col-lg-3.col-md-6
-                        span.service-icon.rounded-circle.mx-auto.mb-3
-                            i.icon-mustache
-                        h4
-                            strong Question
-                        p.text-faded.mb-0 I mustache you a question...
+                .row.gx-4.gx-lg-5.justify-content-center
+                    .col-12.col-md-6.order-last.order-md-first
+                        a.btn-outline-dark.no-hover-effects(href='https://medium.com/@ishtiaque/no-code-isnt-scalable-our-learnings-at-finn-going-from-1000-toward-100-000-car-subscriptions-ac98e752fc61' target='_blank')
+                            .container.px-0.mb-5
+                                h4 No-code isn’t scalable. Our learnings at FINN going from 1000 toward 100,000 car subscriptions
+                        a.btn-outline-dark.no-hover-effects(href='https://medium.com/@ishtiaque/why-i-dont-like-api-frameworks-together-with-serverless-39200063b4e0' target='_blank')
+                            .container.px-0.mb-5
+                                h4 Why I don’t like API frameworks together with Serverless
+                        a.btn-outline-dark.no-hover-effects(href='https://medium.com/@ishtiaque/how-a-german-start-up-achieved-4-mn-arr-in-one-year-89fe123e0079' target='_blank')
+                            .container.px-0.mb-5
+                                h4 How A German Start-up Achieved 4 Mn € ARR In One Year
+                        a.btn-outline-dark.no-hover-effects(href='https://medium.com/@ishtiaque/why-i-chose-to-be-a-software-developer-bb6f2b4f1442' target='_blank')
+                            .container.px-0.mb-5
+                                h4 Why I chose to be a Software Developer
+                    .col-12.col-md-6.order-first.order-md-last
+                        .container.px-0.mb-5.text-end
+                            h6.mb-5.text-uppercase Blog
+                            h1.mb-5 My latest thoughts
+                            p.text-justify
+                                | I write sometimes, about my experiences, observations and thoughts in general.
+                                | Read them on
+                                a.btn-link.text-dark(href="https://medium.com/@ishtiaque" target="_blank") Medium
+                                | or
+                                a.btn-link.text-dark(href="https://dev.to/ishtiaque" target="_blank") dev.to
 
-        // Callout
-        section.callout
-            .container.px-4.px-lg-5.text-center
-                h2.mx-auto.mb-5
-                    | Welcome to
-                    em your
-                    | next website!
-                a.btn.btn-primary.btn-xl(href='https://startbootstrap.com/theme/stylish-portfolio/') Download Now!
-
-        // Portfolio
-        section#portfolio.content-section
-            .container.px-4.px-lg-5
-                .content-section-heading.text-center
-                    h3.text-secondary.mb-0 Portfolio
-                    h2.mb-5 Recent Projects
-                .row.gx-0
-                    .col-lg-6
-                        a.portfolio-item(href='#!')
-                            .caption
-                                .caption-content
-                                    .h2 Stationary
-                                    p.mb-0 A yellow pencil with envelopes on a clean, blue backdrop!
-                            img.img-fluid(src='assets/img/portfolio-1.jpg', alt='...')
-                    .col-lg-6
-                        a.portfolio-item(href='#!')
-                            .caption
-                                .caption-content
-                                    .h2 Ice Cream
-                                    p.mb-0 A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!
-                            img.img-fluid(src='assets/img/portfolio-2.jpg', alt='...')
-                    .col-lg-6
-                        a.portfolio-item(href='#!')
-                            .caption
-                                .caption-content
-                                    .h2 Strawberries
-                                    p.mb-0 Strawberries are such a tasty snack, especially with a little sugar on top!
-                            img.img-fluid(src='assets/img/portfolio-3.jpg', alt='...')
-                    .col-lg-6
-                        a.portfolio-item(href='#!')
-                            .caption
-                                .caption-content
-                                    .h2 Workspace
-                                    p.mb-0 A yellow workspace with some scissors, pencils, and other objects.
-                            img.img-fluid(src='assets/img/portfolio-4.jpg', alt='...')
+        // Work
+        section#work.content-section.bg-dark
+            .container.px-4.px-lg-5.text-start.text-light
+                .row.gx-4.gx-lg-5.justify-content-center
+                    .col
+                        h6.mb-5.text-uppercase Work
+                        h1.mb-5 I &hearts; Software Engineering
+                        p.text-justify
+                            | I am currently working at FINN GmbH, a car-subscription startup based 
+                            | out of Munich, Germany. I work there as a Senior Software Engineer II.
+                            | I love working with TypeScript and AWS and my expertise lies in designing backend systems.
+                            | I come from India. My professional life started out in 2015 and I have worked in various Indian
+                            | startups before joining FINN in May 2020. Starting at FINN, my main task was to analyze the 
+                            | existing processes in subscription management and car delivery, and to automate them. Automated processes are one of the main USPs of FINN.
+                            | As FINN grew, I moved on to a specific sub-team in Operations department: the Customer Product team,
+                            | to focus on building better services for our customers and acheived a industry leading Net Promoter Score (NPS) of 75!
+                            | My Team and I also built a multi-country (EU and US) backend system to help us scale from 10,000 to 100,000 car subscriptions.
+                        p.text-justify
+                            | For a complete and detailed work history, please refer to my LinkedIn page.
+                    .col
+                        div.image-holder
+                            div.work-image
 
         // Call to Action
-        section.content-section.bg-primary.text-white
+        section.content-section#connect
             .container.px-4.px-lg-5.text-center
-                h2.mb-4 The buttons below are impossible to resist...
-                a.btn.btn-xl.btn-light.me-4(href='#!') Click Me!
-                a.btn.btn-xl.btn-dark(href='#!') Look at Me!
-
-        // Map
-        #contact.map
-            iframe(src='https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&aq=0&oq=twitter&sll=28.659344,-81.187888&sspn=0.128789,0.264187&ie=UTF8&hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&t=m&z=15&iwloc=A&output=embed')
-            br
-            small
-                a(href='https://maps.google.com/maps?f=q&source=embed&hl=en&geocode=&q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&aq=0&oq=twitter&sll=28.659344,-81.187888&sspn=0.128789,0.264187&ie=UTF8&hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&t=m&z=15&iwloc=A')
+                h1.mb-5 Got a great idea? Let's talk!
+                p
+                    | Message me on LinkedIn and I'll get back to you as soon as time allows me. I'm always  
+                    | open to collaborations and opportunities. We could even talk about tech or you can show 
+                    | me your cool weekend project.
 
         // Footer
         footer.footer.text-center
             .container.px-4.px-lg-5
                 ul.list-inline.mb-5
                     li.list-inline-item
-                        a.social-link.rounded-circle.text-white.mr-3(href='#!')
-                            i.icon-social-facebook
+                        a.social-link.rounded-circle.text-white.mr-3(href='https://www.linkedin.com/in/ishtiaquezafar/' target='_blank')
+                            i.icon-social-linkedin
                     li.list-inline-item
-                        a.social-link.rounded-circle.text-white.mr-3(href='#!')
+                        a.social-link.rounded-circle.text-white.mr-3(href='https://twitter.com/ZafarIshtiaque' target='_blank')
                             i.icon-social-twitter
                     li.list-inline-item
-                        a.social-link.rounded-circle.text-white(href='#!')
+                        a.social-link.rounded-circle.text-white(href='https://github.com/dev-z' target='_blank')
                             i.icon-social-github
-                p.text-muted.small.mb-0 Copyright &copy; Your Website 2022
+                p.text-muted.small.mb-0 Made by Ishtiaque
 
         // Scroll to Top Button
         a.scroll-to-top.rounded(href='#page-top')

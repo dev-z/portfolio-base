@@ -10,19 +10,8 @@ html {
 
 // Content Section
 .content-section {
-    padding-top: 7.5rem;
-    padding-bottom: 7.5rem;
-}
-
-.content-section-heading {
-    h2 {
-        font-size: 3rem;
-    }
-
-    h3 {
-        font-size: 1rem;
-        text-transform: uppercase;
-    }
+    padding-top: 6rem;
+    padding-bottom: 6rem;
 }
 
 .text-faded {
@@ -58,5 +47,17 @@ html {
 
     i {
         font-weight: 800;
+    }
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.no-hover-effects {
+    @extend .text-dark;
+    text-decoration: none;
+    :hover {
+        text-decoration: none;
     }
 }

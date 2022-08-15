@@ -7749,7 +7749,7 @@ textarea.form-control-lg {
   color: rgba(var(--bs-light-rgb), var(--bs-text-opacity)) !important;
 }
 
-.text-dark {
+.text-dark, .no-hover-effects {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-dark-rgb), var(--bs-text-opacity)) !important;
 }
@@ -11293,16 +11293,8 @@ html {
 }
 
 .content-section {
-  padding-top: 7.5rem;
-  padding-bottom: 7.5rem;
-}
-
-.content-section-heading h2, .content-section-heading .h2 {
-  font-size: 3rem;
-}
-.content-section-heading h3, .content-section-heading .h3 {
-  font-size: 1rem;
-  text-transform: uppercase;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
 .text-faded {
@@ -11329,6 +11321,17 @@ html {
 }
 .scroll-to-top i {
   font-weight: 800;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.no-hover-effects {
+  text-decoration: none;
+}
+.no-hover-effects :hover {
+  text-decoration: none;
 }
 
 #sidebar-wrapper {
@@ -11453,21 +11456,6 @@ footer.footer .social-link:hover {
   text-decoration: none;
 }
 
-.map {
-  height: 30rem;
-}
-.map iframe {
-  pointer-events: none;
-  height: 100%;
-  width: 100%;
-  border: 0;
-}
-
-@media (max-width: 992px) {
-  .map {
-    height: 75%;
-  }
-}
 .masthead {
   min-height: 30rem;
   position: relative;
@@ -11476,7 +11464,7 @@ footer.footer .social-link:hover {
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-masthead.jpg");
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11495,69 +11483,36 @@ footer.footer .social-link:hover {
   }
 }
 
-.portfolio-item {
-  display: block;
-  position: relative;
-  overflow: hidden;
-  max-width: 530px;
-  margin: auto auto 1rem;
-}
-.portfolio-item .caption {
+.image-holder {
   display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100%;
-  width: 100%;
-  background-color: rgba(33, 37, 41, 0.2);
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  z-index: 1;
 }
-.portfolio-item .caption .caption-content {
-  color: #fff;
-  margin: auto 2rem 2rem;
+.image-holder .about-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-image: url("../assets/img/profile-pic.png");
 }
-.portfolio-item .caption .caption-content h2, .portfolio-item .caption .caption-content .h2 {
-  font-size: 0.8rem;
-  text-transform: uppercase;
+
+.image-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
-.portfolio-item .caption .caption-content p {
-  font-weight: 300;
-  font-size: 1.2rem;
-}
-@media (min-width: 992px) {
-  .portfolio-item {
-    max-width: none;
-    margin: 0;
-  }
-  .portfolio-item .caption {
-    transition: background-color 0.7s, -webkit-clip-path 0.25s ease-out;
-    transition: clip-path 0.25s ease-out, background-color 0.7s;
-    transition: clip-path 0.25s ease-out, background-color 0.7s, -webkit-clip-path 0.25s ease-out;
-    -webkit-clip-path: inset(0px);
-            clip-path: inset(0px);
-  }
-  .portfolio-item .caption .caption-content {
-    transition: opacity 0.25s;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    margin-bottom: 5rem;
-  }
-  .portfolio-item img {
-    transition: -webkit-clip-path 0.25s ease-out;
-    transition: clip-path 0.25s ease-out;
-    transition: clip-path 0.25s ease-out, -webkit-clip-path 0.25s ease-out;
-    -webkit-clip-path: inset(-1px);
-            clip-path: inset(-1px);
-  }
-  .portfolio-item:hover img {
-    -webkit-clip-path: inset(2rem);
-            clip-path: inset(2rem);
-  }
-  .portfolio-item:hover .caption {
-    background-color: rgba(29, 128, 159, 0.9);
-    -webkit-clip-path: inset(2rem);
-            clip-path: inset(2rem);
-  }
+.image-holder .work-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-image: url("../assets/img/work-pic.png");
 }
 
 .service-icon {
